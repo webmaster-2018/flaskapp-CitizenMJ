@@ -1,0 +1,11 @@
+{% extends "szablon.html" %}
+{% block tytul %}na gurze rusze{% endblock %}
+{% block h1 %}na dole tesz{% endblock %}
+
+{% block tresc %}
+    {% for p in query %}
+    <p class="lead">
+        {{ p.id }} {{ p.pytanie }}
+    </p>
+    {% endfor %}
+{% endblock %}

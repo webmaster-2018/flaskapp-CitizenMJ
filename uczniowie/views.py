@@ -12,4 +12,15 @@ app = Flask(__name__)
 def index():
     """Strona główna"""
     return render_template('index.html')
+    
+    
+@app.route('/widok')
+def widok():
+    return render_template('widok.html')
+    
+    
+@app.route('/dodaj')
+def dodaj():
+    
+    return render_template('dodaj.html')
 
